@@ -16,10 +16,10 @@
 }
 .CharacterContainer{
   display:flex;
-  flex-direction: row;
   gap:20px;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8 px rgba(0,0,0,0.1);
   img{
     display: flex;
     align-items: stretch;
@@ -55,4 +55,11 @@
     color: #fff;
     gap:20px;
   }
+}
+.noFavorito{
+  cursor: pointer;
+  color: black;
+}
+.Favorito {
+  color: yellow;
 }

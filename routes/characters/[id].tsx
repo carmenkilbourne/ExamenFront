@@ -20,7 +20,7 @@ export default function Page(props:PageProps<Prop>) {
       {
     <div class="CharacterCard">
       <img src={characters[0].image}/>
-      <h1>{characters[0].name}</h1>
+      <h1>{characters[0].name}</h1><Cookie id={characters[0].id}/>
       <p>Casa: {characters[0].house}</p> 
       {characters[0].alive && <p>Vivo</p> || <p>Muerto</p> }
       <a href="/">Volver</a>

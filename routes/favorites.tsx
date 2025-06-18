@@ -11,7 +11,7 @@ export const handler: Handlers = {
     const cookies = getCookies(req.headers);
     const id =cookies.IdPersonaje;
     const personajes = await axios.get<Character[]>(`https://hp-api.onrender.com/api/character/${id}`);
-        return ctx.render({characters:personajes.data});
+    return ctx.render({characters:personajes.data});
   },
 };
 
